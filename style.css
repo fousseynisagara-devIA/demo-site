@@ -127,3 +127,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem
 .legal strong{color:var(--ink)}
 .legal ul{padding-left:1.2rem}
 footer .links{display:flex;gap:1.2rem}
+.gallery{columns:3 260px;column-gap:1.2rem;margin:2rem 0}
+.gallery figure{margin:0 0 1.2rem;break-inside:avoid;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.gallery img{display:block;width:100%;height:auto}
+.gallery figcaption{padding:.8rem 1rem;font-size:.95rem;color:var(--muted)}
