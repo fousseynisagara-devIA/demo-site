@@ -20,6 +20,7 @@
         <li><a href="#etapes">Déroulement</a></li>
         <li><a href="#garanties">Garanties</a></li>
         <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#clients">Clients</a></li>
         <li><a class="btn" href="#contact">Devis gratuit</a></li>
       </ul>
     </nav>
@@ -130,6 +131,22 @@
     </div>
   </section>
 
+    <section id="avis" class="avis">
+    <div class="wrap">
+      <div class="head">
+        <h2>Avis de nos clients</h2>
+        <p>Des organisations nationales et internationales nous font confiance pour leurs installations solaires au Mali.</p>
+      </div>
+      <ul class="orgs">
+        <li><strong>Caritas Suisse</strong><span>Client d’Endale Service</span></li>
+        <li><strong>GIZ</strong><span>Client d’Endale Service</span></li>
+        <li><strong>FHI 360</strong><span>Client d’Endale Service</span></li>
+        <li><strong>ADEJ Mali</strong><span>Client d’Endale Service</span></li>
+      </ul>
+      <!-- À AJOUTER : l’avis de chaque client, dans un <blockquote> sous son nom, avec son accord -->
+    </div>
+  </section>
+
   <section id="contact" class="contact why">
     <div class="wrap">
       <div class="info">
@@ -179,6 +196,35 @@
       <figure><img src="images/realisation-10.jpg" alt="Mise en service d’un système avec stockage" width="562" height="1000" loading="lazy"><figcaption>Mise en service d’un système avec stockage</figcaption></figure>
     </div>
     <a class="btn" href="#contact">Demander un devis gratuit</a>
+  </div>
+</main>
+
+<main id="view-clients" data-view="clients" hidden>
+  <div class="wrap page">
+    <a class="back" href="#accueil">Retour à l’accueil</a>
+    <h1>Nos clients</h1>
+    <p>Des maisons, des commerces et des structures publiques nous confient leur électricité solaire, partout au Mali.</p>
+    <div class="clients">
+      <article class="cli"><h3>Particuliers</h3><p>Maisons et villas qui veulent réduire leur facture et ne plus subir les coupures du réseau.</p></article>
+      <article class="cli"><h3>Commerces et entreprises</h3><p>Boutiques, entrepôts, hôtels et bureaux qui cherchent à moins dépendre du groupe électrogène.</p></article>
+      <article class="cli"><h3>Écoles et centres de santé</h3><p>Structures qui ont besoin d’une électricité fiable pour l’éclairage, le matériel et la conservation des produits.</p></article>
+      <article class="cli"><h3>Associations et collectivités</h3><p>Projets de développement local qui veulent une énergie durable et facile à entretenir.</p></article>
+    </div>
+    <h2>Avis de nos clients</h2>
+    <ul class="orgs">
+      <li><strong>Caritas Suisse</strong><span>Client d’Endale Service</span></li>
+      <li><strong>GIZ</strong><span>Client d’Endale Service</span></li>
+      <li><strong>FHI 360</strong><span>Client d’Endale Service</span></li>
+      <li><strong>ADEJ Mali</strong><span>Client d’Endale Service</span></li>
+    </ul>
+    <!-- À AJOUTER : l’avis de chaque client, dans un <blockquote> sous son nom, avec son accord -->
+    <h2>Ce qu’ils trouvent chez nous</h2>
+    <ul class="points">
+      <li><strong>Une étude gratuite</strong> et un devis détaillé, sans surprise.</li>
+      <li><strong>Une équipe unique</strong> de l’étude du site jusqu’à la mise en service.</li>
+      <li><strong>Un suivi après l’installation</strong> : maintenance, nettoyage et dépannage.</li>
+    </ul>
+    <a class="btn" href="#contact">Devenir client</a>
   </div>
 </main>
 
@@ -235,8 +281,8 @@
 
 <script>
 (function(){
-  var views={"realisations":"view-realisations","mentions-legales":"view-mentions","confidentialite":"view-confidentialite"};
-  var titles={"realisations":"Réalisations","mentions-legales":"Mentions légales","confidentialite":"Politique de confidentialité"};
+  var views={"realisations":"view-realisations","clients":"view-clients","mentions-legales":"view-mentions","confidentialite":"view-confidentialite"};
+  var titles={"realisations":"Réalisations","clients":"Nos clients","mentions-legales":"Mentions légales","confidentialite":"Politique de confidentialité"};
   var home=document.getElementById("accueil");
   function show(){
     var h=location.hash.slice(1), id=views[h];
